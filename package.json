@@ -1,6 +1,6 @@
 {
   "name": "mostly-utils-common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common utils for MostlyJS microservice",
   "author": "Forafish",
   "license": "MIT",
