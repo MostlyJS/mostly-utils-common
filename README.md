@@ -1,18 +1,18 @@
-MostlyJS Common Plugins
-=======================
+MostlyJS Common Utilities
+=========================
 
-[![Build Status](https://travis-ci.org/mostlyjs/mostly-plugins-common.svg)](https://travis-ci.org/mostlyjs/mostly-plugins-common)
+[![Build Status](https://travis-ci.org/mostlyjs/mostly-utils-common.svg)](https://travis-ci.org/mostlyjs/mostly-utils-common)
 
-Common plugins for MostlyJS microservices.
+Common utilities functions for MostlyJS microservices.
 
-* mostly-stats
+* cacheMap
 
 # Usage
 
 ## Installation
 
 ```bash
-npm install mostly-plugins-common
+npm install mostly-utils-common
 ```
 
 # License
