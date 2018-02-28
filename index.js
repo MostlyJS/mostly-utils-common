@@ -1,3 +1,3 @@
 if (!global._babelPolyfill) { require('babel-polyfill'); }
 
-module.exports.stats = require('./lib/stats');
+module.exports.cacheMap = require('./lib/cache-map');
