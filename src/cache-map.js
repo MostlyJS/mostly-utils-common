@@ -20,7 +20,7 @@ export class CacheMap {
   }
 
   async multi(...args) {
-    return Promise.all(fp.map(async (id) => this._cache.get(id), args));
+    return Promise.all(fp.map(async (id) => this.get(id), args));
   }
 
   async set(id, val, ttl) {
