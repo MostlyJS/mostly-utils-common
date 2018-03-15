@@ -16,15 +16,15 @@ export class CacheMap {
   }
 
   async get(id) {
-    return this._cache.get(id);
+    return id && this._cache.get(id);
   }
 
   async multi(...args) {
-    return Promise.all(fp.map(this._cache.get, args));
+    return Promise.all(fp.map(async (id) => this._cache.get(id), args));
   }
 
-  async set(id, val) {
-    return this._cache.set(id, val);
+  async set(id, val, ttl) {
+    return this._cache.set(id, val, ttl * 1000);
   }
 
   async delete(id) {
