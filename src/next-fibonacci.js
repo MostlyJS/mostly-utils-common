@@ -1,6 +1,6 @@
 import fp from 'mostly-func';
 
-function *fibonacci(n) {
+function *fibonacci (n) {
   const infinite = !n && n !== 0;
   let current = 0;
   let next = 1;
@@ -11,7 +11,7 @@ function *fibonacci(n) {
   }
 }
 
-export default function nextFibonacci(current) {
+export default function nextFibonacci (current) {
   const [...fibs] = fibonacci(100);
-  return fp.reduce((next, val) => current < val? fp.reduced(val) : next, 1, fibDays);
+  return fp.reduce((next, val) => current < val? fp.reduced(val) : next, 1, fibs);
 }
