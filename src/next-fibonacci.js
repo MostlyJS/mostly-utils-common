@@ -11,7 +11,7 @@ function *fibonacci (n) {
   }
 }
 
+const [...fibs] = fibonacci(100);
 export default function nextFibonacci (current) {
-  const [...fibs] = fibonacci(100);
   return fp.reduce((next, val) => current < val? fp.reduced(val) : next, 1, fibs);
 }
