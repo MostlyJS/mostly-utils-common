@@ -1,4 +1,4 @@
-import fp from 'mostly-func';
+const fp = require('mostly-func');
 
 function *fibonacci (n) {
   const infinite = !n && n !== 0;
@@ -12,6 +12,6 @@ function *fibonacci (n) {
 }
 
 const [...fibs] = fibonacci(100);
-export default function nextFibonacci (current) {
+module.exports = function nextFibonacci (current) {
   return fp.reduce((next, val) => current < val? fp.reduced(val) : next, 1, fibs);
-}
+};

@@ -1,5 +1,5 @@
-import formatter from './formatter';
-import nextFibonacci from './next-fibonacci';
+const formatter = require('./formatter');
+const nextFibonacci = require('./next-fibonacci');
 
 export {
   formatter,

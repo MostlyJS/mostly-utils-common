@@ -1,11 +1,11 @@
-import fp from 'mostly-func';
+const fp = require('mostly-func');
 
 /**
  * string formatting using shell style place holders
  *
  * format string with ${propertyName} placeholder(s) where propertyName is the path of a property of obj
  */
-export default function formatter (str, obj) {
+module.exports = function formatter (str, obj) {
   if (typeof str !== "string") {
     return '';
   }
@@ -16,4 +16,4 @@ export default function formatter (str, obj) {
     }
     return fp.dotPath(p1, obj) || '';
   });
-}
+};
